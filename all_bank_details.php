@@ -68,7 +68,7 @@ $result = $PHPCRUDLib->allRecords();
                 </span>
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                <?php echo $value['created_at']; ?>
+                <?php echo date_create($value['created_at'])->format('jS M, Y h:i A'); ?>
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                 <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
@@ -79,6 +79,9 @@ $result = $PHPCRUDLib->allRecords();
             <!-- More people... -->
           </tbody>
         </table>
+      </div>
+      <div class="text-center">
+        <a href="index.html" class="justify-center py-2 px-4 border text-center rounded-md text-white bg-green-600 hover:bg-green-700">Add new bank record</a>
       </div>
     </div>
   </div>

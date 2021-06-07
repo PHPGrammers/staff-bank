@@ -7,11 +7,11 @@ class DBConfig
 {
   private $conn;
 
-  private $dbms ='mysql'; //DBMS eg. mysql
-  private $host = 'localhost'; //database host
-  private $port = '3306'; // database port
-  private $user ='root'; // database user
-  private $pass =''; //password of database user
+  private $dbms = 'mysql'; //'sqlsrv'; //'pgsql'; //DBMS eg. 'mysql' for MySQL/ MariaDB, 'pgsql' for PostgreSQL, 'sqlsrv' for MSSQL
+  private $host = 'localhost'; //'192.168.147.1'; //database host
+  private $port = ''; // '5432'; // database port
+  private $user = 'root'; //'root_sql'; //'postgres'; // database user
+  private $pass = ''; //'12345678'; //password of database user
   private $dbname ='staff_bank'; // database name
 public function databaseConnection()
 {
